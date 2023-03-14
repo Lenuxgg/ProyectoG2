@@ -7,9 +7,12 @@ body{
     padding: 45px 20px 0;
 }
 #g2imagen {
-    height: 120px;
+    height: 90px;
     margin: 0;
     line-height: 0;
+    position: relative;
+    left: 0px;
+    top: 0px;
 }
 .header {
     background: rgb(0,0,0);
@@ -20,6 +23,7 @@ body{
     left: 0;
     width: 100%;
 }
+
 .nav{
     display: flex;
     justify-content: space-between;

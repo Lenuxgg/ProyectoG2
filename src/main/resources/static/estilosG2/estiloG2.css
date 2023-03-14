@@ -17,6 +17,7 @@ body{
     background-color: #000000;
     color: #ffffff;
     text-align: center;
+    overflow: auto;
 }
 #g2winner{
     left: 0%;
