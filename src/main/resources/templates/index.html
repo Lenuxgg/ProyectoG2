@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>G2 Esports</title>
+        <meta charset="UTF-8">
+        <link href="/css/menu.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <header th:href="layout/plantilla :: header"/>
+        <h2>Clientes</h2>
+        <table border="1">
+            <thead>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>Correo</th>
+            </thead>
+            <tbody>
+                <tr th:each="cliente : ${clientes}">
+                    <td th:text="${cliente.nombre}"></td>
+                    <td th:text="${apellidos.nombre}"></td>
+                    <td th:text="${correo.nombre}"></td>                  
+                    <td th:href="@{/modificarCliente} +  ${cliente.idCliente">Modificar</a></td>                    
+                    <td th:href="@{/eliminarCliente} +  ${cliente.idCliente">Eliminar</a></td>                                                          
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
